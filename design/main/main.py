@@ -1,0 +1,117 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'main.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(800, 315)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
+        MainWindow.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Tahoma")
+        font.setPointSize(16)
+        MainWindow.setFont(font)
+        MainWindow.setMouseTracking(False)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.text_print = QtWidgets.QTextBrowser(self.centralwidget)
+        self.text_print.setEnabled(False)
+        self.text_print.setGeometry(QtCore.QRect(25, 100, 750, 50))
+        font = QtGui.QFont()
+        font.setFamily("Tahoma")
+        font.setPointSize(25)
+        font.setBold(False)
+        font.setWeight(50)
+        self.text_print.setFont(font)
+        self.text_print.setStyleSheet("background-color: rgba(255,255,255,100);border: 1px solid #1565C0;border-top-right-radius: 10px;border-top-left-radius: 8px;")
+        self.text_print.setObjectName("text_print")
+        self.text_time = QtWidgets.QTextBrowser(self.centralwidget)
+        self.text_time.setEnabled(False)
+        self.text_time.setGeometry(QtCore.QRect(694, 20, 81, 30))
+        font = QtGui.QFont()
+        font.setFamily("Courier")
+        font.setPointSize(11)
+        self.text_time.setFont(font)
+        self.text_time.setStyleSheet("background-color: rgba(255,255,255,100);border: 1px solid #1565C0;border-radius: 8px;")
+        self.text_time.setObjectName("text_time")
+        self.progress = QtWidgets.QProgressBar(self.centralwidget)
+        self.progress.setGeometry(QtCore.QRect(25, 149, 750, 8))
+        self.progress.setStyleSheet("background-color: rgba(255,255,255,100);border: 1px solid #1565C0;")
+        self.progress.setProperty("value", 0)
+        self.progress.setTextVisible(False)
+        self.progress.setObjectName("progress")
+        self.text_name = QtWidgets.QLabel(self.centralwidget)
+        self.text_name.setGeometry(QtCore.QRect(25, 20, 261, 35))
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        self.text_name.setFont(font)
+        self.text_name.setText("")
+        self.text_name.setObjectName("text_name")
+        self.btn_choice = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_choice.setGeometry(QtCore.QRect(25, 210, 150, 45))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.btn_choice.setFont(font)
+        self.btn_choice.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.btn_choice.setStyleSheet("background-color: rgba(255,255,255,100);border: 1px solid #1565C0;border-radius: 8px;")
+        self.btn_choice.setObjectName("btn_choice")
+        self.block_grey = QtWidgets.QTextBrowser(self.centralwidget)
+        self.block_grey.setEnabled(False)
+        self.block_grey.setGeometry(QtCore.QRect(25, 100, 375, 50))
+        self.block_grey.setStyleSheet("background-color: rgba(100,100,100,25);border: 1px solid #1565C0;border-top-left-radius: 8px;")
+        self.block_grey.setObjectName("block_grey")
+        self.text_true = QtWidgets.QLabel(self.centralwidget)
+        self.text_true.setEnabled(False)
+        self.text_true.setGeometry(QtCore.QRect(25, 205, 750, 35))
+        self.text_true.setText("")
+        self.text_true.setObjectName("text_true")
+        self.text_false = QtWidgets.QLabel(self.centralwidget)
+        self.text_false.setEnabled(False)
+        self.text_false.setGeometry(QtCore.QRect(25, 170, 750, 35))
+        self.text_false.setText("")
+        self.text_false.setObjectName("text_false")
+        self.text_info = QtWidgets.QLabel(self.centralwidget)
+        self.text_info.setEnabled(False)
+        self.text_info.setGeometry(QtCore.QRect(25, 55, 750, 35))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.text_info.setFont(font)
+        self.text_info.setText("")
+        self.text_info.setAlignment(QtCore.Qt.AlignCenter)
+        self.text_info.setObjectName("text_info")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "Клава-треня"))
+        self.btn_choice.setText(_translate("MainWindow", "Выбрать файл"))
+        self.block_grey.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Tahoma\'; font-size:16pt;\"><br /></p></body></html>"))
