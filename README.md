@@ -1,2 +1,2 @@
 # KBS
-KeyBoard Simulator with GUI (Python)
+Keyboard simulator with GUI (Python)
